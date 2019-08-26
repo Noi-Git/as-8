@@ -29,7 +29,7 @@ class Books {
     static modify(req, res) {
         const { title, author, description, quantity } = req.body
         return Book
-          .findById(req.params.bookId)
+          .findByPk(req.params.bookId)
           .then((book) => {
             book.update({
               title: title || book.title,
@@ -51,6 +51,24 @@ class Books {
             .catch(error => res.status(400).send(error));
           })
           .catch(error => res.status(400).send(error));
+      }
+      static delete(req, res) {
+        return Book
+          .findByPk(req.params.bookId)
+          .then(book => {
+            if(!book) {
+              return res.status(400).send({
+              message: 'Book Not Found',
+              });
+            }
+            return book
+              .destroy()
+              .then(() => res.status(200).send({
+                message: 'Book successfully deleted'
+              }))
+              .catch(error => res.status(400).send(error));
+          })
+          .catch(error => res.status(400).send(error))
       }
 }
 
