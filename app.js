@@ -23,3 +23,13 @@ app.get('*', (req, res) => res.status(200).send({
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+
+/* Link to the tutorial use to build this project
+https://www.alibabacloud.com/blog/building-a-restful-api-with-express-postgresql-and-node-using-es6_594137
+
+Command to start server
+pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
+
+npm start
+*/
