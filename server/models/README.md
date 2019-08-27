@@ -12,14 +12,14 @@ This project is built using RESTful API where a user can perform a basic CRUD (C
 6. ES6
 
 ** User Post Request **
-![user post request](https://github.com/Noi-Git/techtonica-assessments/blob/master/post-user.png)
+![user post request](https://github.com/Noi-Git/as-8/blob/master/image/post-item.png)
 
 ** Item Post Request **
-![item post request](https://github.com/Noi-Git/techtonica-assessments/blob/master/post-item.png)
+![item post request](https://github.com/Noi-Git/as-8/blob/master/image/post-item.png)
 
 ** Delete Request **
-![delete request](https://github.com/Noi-Git/techtonica-assessments/blob/master/delete.png)
+![delete request](https://github.com/Noi-Git/as-8/blob/master/image/delete.png)
 
 ** .Env **
-![setup .env](https://github.com/Noi-Git/techtonica-assessments/blob/master/env-1.png)
-![setup .env](https://github.com/Noi-Git/techtonica-assessments/blob/master/env-2.png)
+![setup .env](https://github.com/Noi-Git/as-8/blob/master/image/env-1.png)
+![setup .env](https://github.com/Noi-Git/as-8/blob/master/image/env-2.png)
